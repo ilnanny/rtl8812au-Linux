@@ -1,5 +1,11 @@
-___      *assuming you have already installed the build softwares, linux-headers or dkms;
-___      *Follow the steps:
+#RTL8812AU-Linux
+__________________
+
+<img src="https://raw.githubusercontent.com/ilnanny/rtl8812au-Linux/master/screen.png" alt="RTL8812AU-Linux">
+_____________________________________________________________________________________________
+
+___      *Assuming you have already installed the build softwares, linux-headers or dkms;
+            Follow the steps:
 _____________________________________________________________________________________________
 
 ___      *Build / Install with Make
