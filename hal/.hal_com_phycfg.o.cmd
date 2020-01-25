@@ -1,8 +1,8 @@
-cmd_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := gcc -Wp,-MD,/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/.hal_com_phycfg.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/include -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror-implicit-function-declaration -Werror=implicit-int -Wno-format-security -std=gnu89 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-int-in-bool-context -Os -Wno-maybe-uninitialized --param=allow-store-data-races=0 -Wframe-larger-than=2048 -fstack-protector-strong -Wno-unused-but-set-variable -Wno-unused-const-variable -fomit-frame-pointer -fno-var-tracking-assignments -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-stringop-truncation -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=./= -Wno-packed-not-aligned -fno-pie -O1 -Wall -Wextra -Wno-unused-variable -Wno-unused-value -Wno-unused-label -Wno-unused-parameter -Wno-unused-function -Wno-unused -Wno-cast-function-type -Wno-date-time -Wno-uninitialized -Wno-sign-compare -Wno-type-limits -Wno-date-time -Wno-error=date-time -Wno-vla -I/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include -DCONFIG_DISABLE_REGD_C -DDBG=0 -DDRV_NAME=\"rtl88xxau\" -I/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/btc -I/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/phydm -DCONFIG_RTL8812A -DCONFIG_RTL8821A -DCONFIG_RTL8814A -DCONFIG_MP_INCLUDED -DCONFIG_EFUSE_CONFIG_FILE -DEFUSE_MAP_PATH=\"/system/etc/wifi/wifi_efuse_8814au.map\" -DWIFIMAC_PATH=\"/data/wifimac.txt\" -DCONFIG_TXPWR_BY_RATE_EN=0 -DCONFIG_TXPWR_LIMIT_EN=0 -DCONFIG_CALIBRATE_TX_POWER_TO_MAX -DCONFIG_RTW_ADAPTIVITY_EN=0 -DCONFIG_RTW_ADAPTIVITY_MODE=0 -DCONFIG_BR_EXT '-DCONFIG_BR_EXT_BRNAME="'br0'"' -DCONFIG_WIFI_MONITOR -DCONFIG_RTW_NAPI -DCONFIG_RTW_GRO -DCONFIG_RTW_WIFI_HAL -DCONFIG_RTW_CFGVEDNOR_LLSTATS -DCONFIG_VHT_EXTRAS -DCONFIG_LED_CONTROL -DCONFIG_LED_ENABLE -DDM_ODM_SUPPORT_TYPE=0x04 -DCONFIG_LITTLE_ENDIAN -DCONFIG_IOCTL_CFG80211 -DRTW_USE_CFG80211_STA_EVENT  -DMODULE  -DKBUILD_BASENAME='"hal_com_phycfg"' -DKBUILD_MODNAME='"88XXau"' -c -o /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.c
+cmd_/media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/hal/hal_com_phycfg.o := gcc -Wp,-MD,/media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/hal/.hal_com_phycfg.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -fno-jump-tables -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-int-in-bool-context -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-var-tracking-assignments -pg -mfentry -DCC_USING_FENTRY -fno-inline-functions-called-once -Wdeclaration-after-statement -Wno-pointer-sign -Wno-stringop-truncation -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=./= -Wno-packed-not-aligned -fno-pie -O1 -Wall -Wextra -Wno-unused-variable -Wno-unused-value -Wno-unused-label -Wno-unused-parameter -Wno-unused-function -Wno-unused -Wno-cast-function-type -Wno-date-time -Wno-uninitialized -Wno-sign-compare -Wno-type-limits -Wno-date-time -Wno-error=date-time -Wno-vla -I/media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include -DCONFIG_DISABLE_REGD_C -DDBG=0 -DDRV_NAME=\"rtl88xxau\" -I/media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/hal/btc -I/media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/hal/phydm -DCONFIG_RTL8812A -DCONFIG_RTL8821A -DCONFIG_RTL8814A -DCONFIG_MP_INCLUDED -DCONFIG_EFUSE_CONFIG_FILE -DEFUSE_MAP_PATH=\"/system/etc/wifi/wifi_efuse_8814au.map\" -DWIFIMAC_PATH=\"/data/wifimac.txt\" -DCONFIG_TXPWR_BY_RATE_EN=0 -DCONFIG_TXPWR_LIMIT_EN=0 -DCONFIG_CALIBRATE_TX_POWER_TO_MAX -DCONFIG_RTW_ADAPTIVITY_EN=0 -DCONFIG_RTW_ADAPTIVITY_MODE=0 -DCONFIG_BR_EXT '-DCONFIG_BR_EXT_BRNAME="'br0'"' -DCONFIG_WIFI_MONITOR -DCONFIG_RTW_NAPI -DCONFIG_RTW_GRO -DCONFIG_RTW_WIFI_HAL -DCONFIG_RTW_CFGVEDNOR_LLSTATS -DCONFIG_VHT_EXTRAS -DCONFIG_LED_CONTROL -DCONFIG_LED_ENABLE -DDM_ODM_SUPPORT_TYPE=0x04 -DCONFIG_LITTLE_ENDIAN -DCONFIG_IOCTL_CFG80211 -DRTW_USE_CFG80211_STA_EVENT  -DMODULE  -DKBUILD_BASENAME='"hal_com_phycfg"' -DKBUILD_MODNAME='"88XXau"' -c -o /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/hal/.tmp_hal_com_phycfg.o /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/hal/hal_com_phycfg.c
 
-source_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.c
+source_/media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/hal/hal_com_phycfg.o := /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/hal/hal_com_phycfg.c
 
-deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
+deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/hal/hal_com_phycfg.o := \
     $(wildcard include/config/rtl8188e.h) \
     $(wildcard include/config/rtl8188f.h) \
     $(wildcard include/config/rtl8723b.h) \
@@ -29,11 +29,10 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/enable/must/check.h) \
     $(wildcard include/config/arch/supports/optimized/inlining.h) \
     $(wildcard include/config/optimize/inlining.h) \
-  include/linux/compiler_attributes.h \
   include/linux/compiler-gcc.h \
     $(wildcard include/config/retpoline.h) \
     $(wildcard include/config/arch/use/builtin/bswap.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/drv_types.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/drv_types.h \
     $(wildcard include/config/arp/keep/alive.h) \
     $(wildcard include/config/80211n/ht.h) \
     $(wildcard include/config/80211ac/vht.h) \
@@ -95,7 +94,7 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/tx/amsdu.h) \
     $(wildcard include/config/pno/support.h) \
     $(wildcard include/config/pno/set/debug.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/drv_conf.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/drv_conf.h \
     $(wildcard include/config/ap.h) \
     $(wildcard include/config/rtw/repeater/son/id.h) \
     $(wildcard include/config/rtw/repeater/son/root.h) \
@@ -159,7 +158,7 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/rtw/hostapd/acs.h) \
     $(wildcard include/config/find/best/channel.h) \
     $(wildcard include/config/ips.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/autoconf.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/autoconf.h \
     $(wildcard include/config/single/img.h) \
     $(wildcard include/config/disable/odm.h) \
     $(wildcard include/config/cfg80211/force/compatible/2/6/37/under.h) \
@@ -230,14 +229,14 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/attempt/to/fix/ap/beacon/error.h) \
     $(wildcard include/config/proc/debug.h) \
     $(wildcard include/config/use/external/power.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/hal_ic_cfg.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/hal_ic_cfg.h \
     $(wildcard include/config/fw/c2h/pkt.h) \
     $(wildcard include/config/rtw/mac/hidden/rpt.h) \
     $(wildcard include/config/ap/port/swap.h) \
     $(wildcard include/config/no/fw.h) \
     $(wildcard include/config/phy/capability/query.h) \
     $(wildcard include/config/ampdu/pretx/cd.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/basic_types.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/basic_types.h \
   include/generated/uapi/linux/version.h \
   include/linux/types.h \
     $(wildcard include/config/have/uid16.h) \
@@ -273,7 +272,6 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/kallsyms.h) \
     $(wildcard include/config/smp.h) \
     $(wildcard include/config/tracepoints.h) \
-    $(wildcard include/config/bpf/events.h) \
     $(wildcard include/config/jump/label.h) \
     $(wildcard include/config/tracing.h) \
     $(wildcard include/config/event/tracing.h) \
@@ -296,7 +294,7 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/prove/locking.h) \
     $(wildcard include/config/arch/has/refcount.h) \
     $(wildcard include/config/panic/timeout.h) \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.0/include/stdarg.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/8.3.0/include/stdarg.h \
   include/linux/linkage.h \
   include/linux/stringify.h \
   include/linux/export.h \
@@ -341,7 +339,6 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/paravirt.h) \
   arch/x86/include/asm/disabled-features.h \
     $(wildcard include/config/x86/intel/mpx.h) \
-    $(wildcard include/config/x86/smap.h) \
     $(wildcard include/config/x86/intel/umip.h) \
     $(wildcard include/config/x86/intel/memory/protection/keys.h) \
     $(wildcard include/config/x86/5level.h) \
@@ -379,6 +376,9 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/x86/l1/cache/shift.h) \
     $(wildcard include/config/x86/internode/cache/shift.h) \
     $(wildcard include/config/x86/vsmp.h) \
+  include/linux/dynamic_debug.h \
+  include/linux/jump_label.h \
+  arch/x86/include/asm/jump_label.h \
   include/linux/build_bug.h \
   include/linux/stat.h \
   arch/x86/include/uapi/asm/stat.h \
@@ -478,7 +478,6 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
   arch/x86/include/asm/processor.h \
     $(wildcard include/config/kvm.h) \
     $(wildcard include/config/stackprotector.h) \
-    $(wildcard include/config/paravirt/xxl.h) \
     $(wildcard include/config/x86/debugctlmsr.h) \
     $(wildcard include/config/cpu/sup/amd.h) \
     $(wildcard include/config/xen.h) \
@@ -519,18 +518,16 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
   arch/x86/include/asm/string_64.h \
     $(wildcard include/config/x86/mce.h) \
     $(wildcard include/config/arch/has/uaccess/flushcache.h) \
-  include/linux/jump_label.h \
-    $(wildcard include/config/have/arch/jump/label/relative.h) \
-  include/linux/atomic.h \
-    $(wildcard include/config/generic/atomic64.h) \
+  arch/x86/include/uapi/asm/msr.h \
   arch/x86/include/asm/atomic.h \
   arch/x86/include/asm/cmpxchg.h \
   arch/x86/include/asm/cmpxchg_64.h \
   arch/x86/include/asm/atomic64_64.h \
   include/asm-generic/atomic-instrumented.h \
-  include/asm-generic/atomic-long.h \
-  arch/x86/include/uapi/asm/msr.h \
   include/linux/tracepoint-defs.h \
+  include/linux/atomic.h \
+    $(wildcard include/config/generic/atomic64.h) \
+  include/asm-generic/atomic-long.h \
   include/linux/static_key.h \
   include/linux/errno.h \
   include/uapi/linux/errno.h \
@@ -549,6 +546,9 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/trace/irqflags/support.h) \
   arch/x86/include/asm/irqflags.h \
     $(wildcard include/config/debug/entry.h) \
+  arch/x86/include/asm/nospec-branch.h \
+  arch/x86/include/asm/alternative-asm.h \
+  arch/x86/include/asm/msr-index.h \
   include/linux/bottom_half.h \
   include/linux/spinlock_types.h \
   arch/x86/include/asm/spinlock_types.h \
@@ -624,6 +624,7 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/memory/hotplug.h) \
     $(wildcard include/config/flat/node/mem/map.h) \
     $(wildcard include/config/page/extension.h) \
+    $(wildcard include/config/no/bootmem.h) \
     $(wildcard include/config/deferred/struct/page/init.h) \
     $(wildcard include/config/transparent/hugepage.h) \
     $(wildcard include/config/have/memory/present.h) \
@@ -646,7 +647,6 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/hugetlb/page/size/variable.h) \
   include/linux/page-flags-layout.h \
     $(wildcard include/config/numa/balancing.h) \
-    $(wildcard include/config/kasan/sw/tags.h) \
   include/generated/bounds.h \
   include/linux/memory_hotplug.h \
     $(wildcard include/config/arch/has/add/pages.h) \
@@ -773,25 +773,6 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
   include/linux/overflow.h \
   arch/x86/include/uapi/asm/vsyscall.h \
   include/asm-generic/fixmap.h \
-  include/linux/mm_types.h \
-    $(wildcard include/config/have/aligned/struct/page.h) \
-    $(wildcard include/config/userfaultfd.h) \
-    $(wildcard include/config/have/arch/compat/mmap/bases.h) \
-    $(wildcard include/config/membarrier.h) \
-    $(wildcard include/config/aio.h) \
-    $(wildcard include/config/mmu/notifier.h) \
-    $(wildcard include/config/arch/want/batched/unmap/tlb/flush.h) \
-    $(wildcard include/config/hmm.h) \
-  include/linux/mm_types_task.h \
-    $(wildcard include/config/split/ptlock/cpus.h) \
-    $(wildcard include/config/arch/enable/split/pmd/ptlock.h) \
-  arch/x86/include/asm/tlbbatch.h \
-  include/linux/auxvec.h \
-  include/uapi/linux/auxvec.h \
-  arch/x86/include/uapi/asm/auxvec.h \
-  include/linux/uprobes.h \
-    $(wildcard include/config/uprobes.h) \
-  arch/x86/include/asm/uprobes.h \
   arch/x86/include/asm/hardirq.h \
     $(wildcard include/config/kvm/intel.h) \
     $(wildcard include/config/have/kvm.h) \
@@ -813,10 +794,27 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/x86/x32/abi.h) \
   arch/x86/include/asm/user.h \
   arch/x86/include/asm/user_64.h \
-  arch/x86/include/asm/fsgsbase.h \
-  arch/x86/include/asm/msr-index.h \
+  arch/x86/include/uapi/asm/auxvec.h \
   arch/x86/include/asm/vdso.h \
     $(wildcard include/config/x86/x32.h) \
+  include/linux/mm_types.h \
+    $(wildcard include/config/have/aligned/struct/page.h) \
+    $(wildcard include/config/userfaultfd.h) \
+    $(wildcard include/config/have/arch/compat/mmap/bases.h) \
+    $(wildcard include/config/membarrier.h) \
+    $(wildcard include/config/aio.h) \
+    $(wildcard include/config/mmu/notifier.h) \
+    $(wildcard include/config/arch/want/batched/unmap/tlb/flush.h) \
+    $(wildcard include/config/hmm.h) \
+  include/linux/mm_types_task.h \
+    $(wildcard include/config/split/ptlock/cpus.h) \
+    $(wildcard include/config/arch/enable/split/pmd/ptlock.h) \
+  arch/x86/include/asm/tlbbatch.h \
+  include/linux/auxvec.h \
+  include/uapi/linux/auxvec.h \
+  include/linux/uprobes.h \
+    $(wildcard include/config/uprobes.h) \
+  arch/x86/include/asm/uprobes.h \
   include/uapi/linux/elf.h \
   include/uapi/linux/elf-em.h \
   include/linux/kobject.h \
@@ -827,9 +825,7 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/kernfs.h) \
   include/linux/idr.h \
   include/linux/radix-tree.h \
-  include/linux/xarray.h \
-    $(wildcard include/config/xarray/multi.h) \
-  include/linux/kconfig.h \
+    $(wildcard include/config/radix/tree/multiorder.h) \
   include/linux/kobject_ns.h \
   include/linux/kref.h \
   include/linux/refcount.h \
@@ -841,6 +837,7 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/ppc64.h) \
   include/linux/rbtree_latch.h \
   include/linux/error-injection.h \
+  arch/x86/include/asm/error-injection.h \
   include/asm-generic/error-injection.h \
   arch/x86/include/asm/module.h \
     $(wildcard include/config/unwinder/orc.h) \
@@ -882,7 +879,7 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/rt/group/sched.h) \
     $(wildcard include/config/cgroup/sched.h) \
     $(wildcard include/config/blk/dev/io/trace.h) \
-    $(wildcard include/config/psi.h) \
+    $(wildcard include/config/memcg/kmem.h) \
     $(wildcard include/config/compat/brk.h) \
     $(wildcard include/config/cgroups.h) \
     $(wildcard include/config/blk/cgroup.h) \
@@ -897,7 +894,7 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/block.h) \
     $(wildcard include/config/task/xacct.h) \
     $(wildcard include/config/cpusets.h) \
-    $(wildcard include/config/x86/cpu/resctrl.h) \
+    $(wildcard include/config/intel/rdt.h) \
     $(wildcard include/config/futex.h) \
     $(wildcard include/config/perf/events.h) \
     $(wildcard include/config/rseq.h) \
@@ -909,7 +906,6 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/bcache.h) \
     $(wildcard include/config/vmap/stack.h) \
     $(wildcard include/config/security.h) \
-    $(wildcard include/config/gcc/plugin/stackleak.h) \
     $(wildcard include/config/arch/task/struct/on/stack.h) \
     $(wildcard include/config/debug/rseq.h) \
   include/uapi/linux/sched.h \
@@ -968,14 +964,13 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
   include/uapi/asm-generic/signal-defs.h \
   arch/x86/include/uapi/asm/siginfo.h \
   include/uapi/asm-generic/siginfo.h \
-  include/linux/psi_types.h \
   include/linux/task_io_accounting.h \
     $(wildcard include/config/task/io/accounting.h) \
   include/uapi/linux/rseq.h \
   include/linux/nsproxy.h \
   include/linux/ns_common.h \
   include/uapi/linux/utsname.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/osdep_service.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/osdep_service.h \
     $(wildcard include/config/use/vmalloc.h) \
     $(wildcard include/config/ap/wowlan.h) \
   include/linux/sched/signal.h \
@@ -1009,7 +1004,7 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/net.h) \
   include/linux/ratelimit.h \
   include/uapi/linux/sched/types.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/osdep_service_linux.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/osdep_service_linux.h \
     $(wildcard include/config/net/radio.h) \
     $(wildcard include/config/wireless/ext.h) \
     $(wildcard include/config/ieee80211/ht/addt/info.h) \
@@ -1019,13 +1014,11 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
   include/linux/slab.h \
     $(wildcard include/config/debug/slab.h) \
     $(wildcard include/config/failslab.h) \
-    $(wildcard include/config/memcg/kmem.h) \
     $(wildcard include/config/have/hardened/usercopy/allocator.h) \
     $(wildcard include/config/slab.h) \
     $(wildcard include/config/slub.h) \
     $(wildcard include/config/slob.h) \
   include/linux/kasan.h \
-    $(wildcard include/config/kasan/generic.h) \
   include/linux/netdevice.h \
     $(wildcard include/config/dcb.h) \
     $(wildcard include/config/hyperv/net.h) \
@@ -1039,7 +1032,6 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/rps.h) \
     $(wildcard include/config/netpoll.h) \
     $(wildcard include/config/xps.h) \
-    $(wildcard include/config/xdp/sockets.h) \
     $(wildcard include/config/bql.h) \
     $(wildcard include/config/rfs/accel.h) \
     $(wildcard include/config/fcoe.h) \
@@ -1074,6 +1066,7 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/arch/has/syscall/wrapper.h) \
     $(wildcard include/config/compat/old/sigaction.h) \
     $(wildcard include/config/odd/rt/sigaction.h) \
+  include/linux/compat_time.h \
   include/linux/socket.h \
   arch/x86/include/uapi/asm/socket.h \
   include/uapi/asm-generic/socket.h \
@@ -1082,15 +1075,6 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
   include/uapi/linux/sockios.h \
   include/linux/uio.h \
     $(wildcard include/config/arch/has/uaccess/mcsafe.h) \
-  include/crypto/hash.h \
-  include/linux/crypto.h \
-    $(wildcard include/config/crypto/stats.h) \
-  include/linux/uaccess.h \
-  arch/x86/include/asm/uaccess.h \
-    $(wildcard include/config/x86/intel/usercopy.h) \
-  arch/x86/include/asm/smap.h \
-  arch/x86/include/asm/extable.h \
-  arch/x86/include/asm/uaccess_64.h \
   include/uapi/linux/uio.h \
   include/uapi/linux/socket.h \
   include/uapi/linux/if.h \
@@ -1123,6 +1107,7 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
   include/linux/path.h \
   include/linux/list_lru.h \
   include/linux/shrinker.h \
+  include/linux/xarray.h \
   include/linux/semaphore.h \
   include/linux/fcntl.h \
   include/uapi/linux/fcntl.h \
@@ -1153,25 +1138,30 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
   include/uapi/linux/quota.h \
   include/linux/nfs_fs_i.h \
   include/uapi/linux/aio_abi.h \
+  include/linux/uaccess.h \
+  arch/x86/include/asm/uaccess.h \
+    $(wildcard include/config/x86/intel/usercopy.h) \
+  arch/x86/include/asm/smap.h \
+    $(wildcard include/config/x86/smap.h) \
+  arch/x86/include/asm/extable.h \
+  arch/x86/include/asm/uaccess_64.h \
   arch/x86/include/asm/compat.h \
   include/linux/sched/task_stack.h \
     $(wildcard include/config/debug/stack/usage.h) \
   include/uapi/linux/magic.h \
   arch/x86/include/asm/user32.h \
-  include/asm-generic/compat.h \
   arch/x86/include/asm/syscall_wrapper.h \
   include/uapi/linux/ethtool.h \
   include/linux/if_ether.h \
   include/linux/skbuff.h \
     $(wildcard include/config/nf/conntrack.h) \
     $(wildcard include/config/bridge/netfilter.h) \
-    $(wildcard include/config/skb/extensions.h) \
+    $(wildcard include/config/xfrm.h) \
     $(wildcard include/config/ipv6/ndisc/nodetype.h) \
     $(wildcard include/config/net/rx/busy/poll.h) \
     $(wildcard include/config/network/secmark.h) \
     $(wildcard include/config/have/efficient/unaligned/access.h) \
     $(wildcard include/config/network/phy/timestamping.h) \
-    $(wildcard include/config/xfrm.h) \
     $(wildcard include/config/netfilter/xt/target/trace.h) \
     $(wildcard include/config/nf/tables.h) \
     $(wildcard include/config/ip/vs.h) \
@@ -1191,11 +1181,8 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
   arch/x86/include/asm/checksum_64.h \
   include/linux/dma-mapping.h \
     $(wildcard include/config/have/generic/dma/coherent.h) \
-    $(wildcard include/config/arch/has/sync/dma/for/device.h) \
-    $(wildcard include/config/swiotlb.h) \
-    $(wildcard include/config/arch/has/sync/dma/for/cpu.h) \
-    $(wildcard include/config/arch/has/sync/dma/for/cpu/all.h) \
     $(wildcard include/config/has/dma.h) \
+    $(wildcard include/config/arch/has/dma/set/coherent/mask.h) \
     $(wildcard include/config/need/dma/map/state.h) \
   include/linux/sizes.h \
   include/linux/device.h \
@@ -1228,7 +1215,7 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/need/sg/dma/length.h) \
     $(wildcard include/config/debug/sg.h) \
     $(wildcard include/config/sgl/alloc.h) \
-    $(wildcard include/config/arch/no/sg/chain.h) \
+    $(wildcard include/config/arch/has/sg/chain.h) \
     $(wildcard include/config/sg/pool.h) \
   include/linux/mm.h \
     $(wildcard include/config/have/arch/mmap/rnd/bits.h) \
@@ -1239,8 +1226,8 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/parisc.h) \
     $(wildcard include/config/sparc64.h) \
     $(wildcard include/config/dev/pagemap/ops.h) \
-    $(wildcard include/config/pci/p2pdma.h) \
     $(wildcard include/config/shmem.h) \
+    $(wildcard include/config/have/memblock.h) \
     $(wildcard include/config/debug/vm/rb.h) \
     $(wildcard include/config/page/poisoning.h) \
     $(wildcard include/config/debug/pagealloc.h) \
@@ -1285,6 +1272,7 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
   arch/x86/include/asm/dma-mapping.h \
     $(wildcard include/config/isa.h) \
   arch/x86/include/asm/swiotlb.h \
+    $(wildcard include/config/swiotlb.h) \
   include/linux/swiotlb.h \
   include/linux/dma-contiguous.h \
   include/linux/netdev_features.h \
@@ -1326,6 +1314,7 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/ip/mroute/multiple/tables.h) \
     $(wildcard include/config/ip/route/multipath.h) \
   include/net/inet_frag.h \
+  include/linux/siphash.h \
   include/net/netns/ipv6.h \
     $(wildcard include/config/ipv6/multiple/tables.h) \
     $(wildcard include/config/ipv6/mroute.h) \
@@ -1352,11 +1341,12 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
   include/linux/list_nulls.h \
   include/linux/netfilter/nf_conntrack_tcp.h \
   include/uapi/linux/netfilter/nf_conntrack_tcp.h \
-  include/linux/netfilter/nf_conntrack_sctp.h \
-  include/uapi/linux/netfilter/nf_conntrack_sctp.h \
+  include/linux/netfilter/nf_conntrack_dccp.h \
   include/uapi/linux/netfilter/nf_conntrack_tuple_common.h \
   include/linux/netfilter/nf_conntrack_common.h \
   include/uapi/linux/netfilter/nf_conntrack_common.h \
+  include/linux/netfilter/nf_conntrack_sctp.h \
+  include/uapi/linux/netfilter/nf_conntrack_sctp.h \
   include/net/netns/nftables.h \
   include/net/netns/xfrm.h \
   include/uapi/linux/xfrm.h \
@@ -1364,6 +1354,8 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
   include/net/netns/can.h \
   include/linux/seq_file_net.h \
   include/linux/seq_file.h \
+  include/net/dcbnl.h \
+  include/uapi/linux/dcbnl.h \
   include/net/netprio_cgroup.h \
   include/linux/cgroup.h \
     $(wildcard include/config/cgroup/cpuacct.h) \
@@ -1395,15 +1387,11 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
   include/linux/cgroup-defs.h \
   include/linux/bpf-cgroup.h \
     $(wildcard include/config/cgroup/bpf.h) \
-  include/linux/bpf.h \
-    $(wildcard include/config/bpf/stream/parser.h) \
-    $(wildcard include/config/inet.h) \
   include/uapi/linux/bpf.h \
     $(wildcard include/config/efficient/unaligned/access.h) \
     $(wildcard include/config/bpf/kprobe/override.h) \
     $(wildcard include/config/bpf/lirc/mode2.h) \
   include/uapi/linux/bpf_common.h \
-  include/linux/file.h \
   include/linux/cgroup_subsys.h \
     $(wildcard include/config/cgroup/device.h) \
     $(wildcard include/config/cgroup/freezer.h) \
@@ -1467,6 +1455,7 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
   include/linux/win_minmax.h \
   include/net/sock.h \
     $(wildcard include/config/sock/validate/xmit.h) \
+    $(wildcard include/config/inet.h) \
   include/linux/page_counter.h \
   include/linux/memcontrol.h \
     $(wildcard include/config/memcg/swap.h) \
@@ -1480,6 +1469,14 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
   include/linux/blk_types.h \
     $(wildcard include/config/blk/dev/integrity.h) \
   include/linux/bvec.h \
+  include/linux/bio.h \
+  include/linux/highmem.h \
+    $(wildcard include/config/debug/highmem.h) \
+  arch/x86/include/asm/cacheflush.h \
+  include/asm-generic/cacheflush.h \
+  arch/x86/include/asm/kmap_types.h \
+  include/asm-generic/kmap_types.h \
+  include/linux/mempool.h \
   include/linux/filter.h \
     $(wildcard include/config/bpf/jit.h) \
     $(wildcard include/config/have/ebpf/jit.h) \
@@ -1548,34 +1545,34 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
   include/linux/usb/ch9.h \
   include/uapi/linux/usb/ch9.h \
   include/linux/pm_runtime.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_byteorder.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_byteorder.h \
     $(wildcard include/config/little/endian.h) \
     $(wildcard include/config/big/endian.h) \
     $(wildcard include/config/platform/mstar389.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/byteorder/little_endian.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/wlan_bssdef.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/wifi.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/byteorder/little_endian.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/wlan_bssdef.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/wifi.h \
     $(wildcard include/config/append/vendor/ie/enable.h) \
     $(wildcard include/config/rtl8712fw.h) \
     $(wildcard include/config/vht/extras.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/ieee80211.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/ieee80211.h \
     $(wildcard include/config/rtl8711fw.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/drv_types_linux.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_debug.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/drv_types_linux.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_debug.h \
     $(wildcard include/config/rtw/debug.h) \
     $(wildcard include/config/rf4ce/coexist.h) \
     $(wildcard include/config/p2p/wowlan.h) \
     $(wildcard include/config/dbg/rf/cal.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/cmn_info/rtw_sta_info.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_rf.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_ht.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_vht.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_cmd.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/cmn_info/rtw_sta_info.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_rf.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_ht.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_vht.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_cmd.h \
     $(wildcard include/config/fw/c2h/reg.h) \
     $(wildcard include/config/c2h/wk.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/cmd_osdep.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_security.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_xmit.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/cmd_osdep.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_security.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_xmit.h \
     $(wildcard include/config/tx/aggregation.h) \
     $(wildcard include/config/platform/arm/sunxi.h) \
     $(wildcard include/config/platform/arm/sun6i.h) \
@@ -1588,93 +1585,93 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/trx/bd/arch.h) \
     $(wildcard include/config/64bit/dma.h) \
     $(wildcard include/config/sdio/tx/tasklet.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/xmit_osdep.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_recv.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/xmit_osdep.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_recv.h \
     $(wildcard include/config/single/recv/buf.h) \
     $(wildcard include/config/radiotap/with/rxdesc.h) \
     $(wildcard include/config/rx/indicate/queue.h) \
     $(wildcard include/config/signal/scale/mapping.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/cmn_info/rtw_sta_info.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_beamforming.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/recv_osdep.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_efuse.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_sreset.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/hal_intf.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/cmn_info/rtw_sta_info.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_beamforming.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/recv_osdep.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_efuse.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_sreset.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/hal_intf.h \
     $(wildcard include/config/lps/pg.h) \
     $(wildcard include/config/lps/lclk/wd/timer.h) \
     $(wildcard include/config/rfkill/poll.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/hal_com.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/hal_com.h \
     $(wildcard include/config/rf/power/trim.h) \
     $(wildcard include/config/bcn/recovery.h) \
     $(wildcard include/config/bcn/xmit/protect.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/HalVerDef.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/hal_pg.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/hal_phy.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/hal_phy_reg.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/hal_com_reg.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/hal_com_phycfg.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/hal_com_c2h.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/hal_com_h2c.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/HalVerDef.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/hal_pg.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/hal_phy.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/hal_phy_reg.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/hal_com_reg.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/hal_com_phycfg.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/hal_com_c2h.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/hal_com_h2c.h \
     $(wildcard include/config/ra/dbg/cmd.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/hal_com_led.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/hal_dm.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_qos.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_pwrctrl.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/hal_com_led.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/hal_dm.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_qos.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_pwrctrl.h \
     $(wildcard include/config/platform/android/intel/x86.h) \
     $(wildcard include/config/lps/rpwm/timer.h) \
     $(wildcard include/config/rtw/cfgvednor/llstats.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_mlme.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/mlme_osdep.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_io.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_ioctl.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_ioctl_set.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_ioctl_query.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_ioctl_rtl.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/osdep_intf.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_mlme.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/mlme_osdep.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_io.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_ioctl.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_ioctl_set.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_ioctl_query.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_ioctl_rtl.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/osdep_intf.h \
     $(wildcard include/config/r871x/test.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../os_dep/linux/ioctl_cfg80211.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../os_dep/linux/ioctl_cfg80211.h \
     $(wildcard include/config/rtw/dynamic/ndev.h) \
     $(wildcard include/config/radio/work.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../os_dep/linux/rtw_cfgvendor.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_eeprom.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/sta_info.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../os_dep/linux/rtw_cfgvendor.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_eeprom.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/sta_info.h \
     $(wildcard include/config/rtw/macaddr/acl.h) \
     $(wildcard include/config/rtw/pre/link/sta.h) \
     $(wildcard include/config/atmel/rc/patch.h) \
     $(wildcard include/config/auto/ap/mode.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_event.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_mlme_ext.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_event.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_mlme_ext.h \
     $(wildcard include/config/rtw/wnm.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_mi.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_mi.h \
     $(wildcard include/config/rtw/mesh.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_ap.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_ap.h \
     $(wildcard include/config/bmc/tx/rate/select.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_version.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_odm.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_types.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_p2p.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_mp.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_br_ext.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/ip.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/if_ether.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/ethernet.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/circ_buf.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_android.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_version.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_odm.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_types.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_p2p.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_mp.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_br_ext.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/ip.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/if_ether.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/ethernet.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/circ_buf.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_android.h \
     $(wildcard include/config/platform/intel/byt.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtw_btcoex_wifionly.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/usb_osintf.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/usb_vendor_req.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/usb_ops.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtw_btcoex_wifionly.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/usb_osintf.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/usb_vendor_req.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/usb_ops.h \
     $(wildcard include/config/rtl8814.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/usb_ops_linux.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/usb_hal.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/hal_data.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/usb_ops_linux.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/usb_hal.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/hal_data.h \
     $(wildcard include/config/pci/dynamic/aspm.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_precomp.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_precomp.h \
     $(wildcard include/config/sfw/supported.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_types.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_features.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_features_ce.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_types.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_features.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_features_ce.h \
     $(wildcard include/config/adaptive/soml.h) \
     $(wildcard include/config/dynamic/rx/path.h) \
     $(wildcard include/config/receiver/blocking.h) \
@@ -1692,9 +1689,9 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/ra/dynamic/rty/limit.h) \
     $(wildcard include/config/bb/txbf/api.h) \
     $(wildcard include/config/phydm/debug/function.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/halrf/halrf_features.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/halrf/halrf_features.h \
     $(wildcard include/config/halrf/powertracking.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm.h \
     $(wildcard include/config/hl/smart/antenna.h) \
     $(wildcard include/config/bb/phy/reg.h) \
     $(wildcard include/config/bb/agc/tab.h) \
@@ -1712,121 +1709,121 @@ deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o := \
     $(wildcard include/config/fw/wowlan/2.h) \
     $(wildcard include/config/fw/ap/wowlan.h) \
     $(wildcard include/config/fw/bt.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_pre_define.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_dig.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_pathdiv.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_antdiv.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_pre_define.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_dig.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_pathdiv.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_antdiv.h \
     $(wildcard include/config/antenna/diversity/period.h) \
     $(wildcard include/config/5g/cg/smart/ant/diversity.h) \
     $(wildcard include/config/2g/cg/smart/ant/diversity.h) \
     $(wildcard include/config/wlan/hal.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_soml.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_smt_ant.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_antdect.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_rainfo.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_soml.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_smt_ant.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_antdect.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_rainfo.h \
     $(wildcard include/config/ra/dynamic/rate/id.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_dynamictxpower.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_cfotracking.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_acs.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_adaptivity.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_dfs.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_ccx.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/txbf/phydm_hal_txbf_api.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_adc_sampling.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_dynamic_rx_path.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_psd.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_primary_cca.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_cck_pd.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_rssi_monitor.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_auto_dbg.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_math_lib.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_noisemonitor.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_api.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_pow_train.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_beamforming.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/txbf/halcomtxbf.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/txbf/haltxbfjaguar.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/txbf/haltxbf8192e.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/txbf/haltxbf8814a.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/txbf/haltxbf8822b.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/txbf/haltxbfinterface.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/halrf/halrf_iqk.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/halrf/halrf.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/phydm/halrf/halrf_psd.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/halrf/halrf_powertracking.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/halrf/halphyrf_ce.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/phydm/halrf/halrf_kfree.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/phydm/halrf/rtl8814a/halrf_iqk_8814a.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/phydm/halrf/halrf_powertracking_ce.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_hwconfig.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_phystatus.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_debug.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_regdefine11ac.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_regdefine11n.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_interface.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/phydm_reg.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_dynamictxpower.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_cfotracking.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_acs.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_adaptivity.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_dfs.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_ccx.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/txbf/phydm_hal_txbf_api.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_adc_sampling.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_dynamic_rx_path.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_psd.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_primary_cca.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_cck_pd.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_rssi_monitor.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_auto_dbg.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_math_lib.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_noisemonitor.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_api.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_pow_train.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_beamforming.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/txbf/halcomtxbf.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/txbf/haltxbfjaguar.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/txbf/haltxbf8192e.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/txbf/haltxbf8814a.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/txbf/haltxbf8822b.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/txbf/haltxbfinterface.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/halrf/halrf_iqk.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/halrf/halrf.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/hal/phydm/halrf/halrf_psd.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/halrf/halrf_powertracking.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/halrf/halphyrf_ce.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/hal/phydm/halrf/halrf_kfree.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/hal/phydm/halrf/rtl8814a/halrf_iqk_8814a.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/hal/phydm/halrf/halrf_powertracking_ce.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_hwconfig.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_phystatus.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_debug.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_regdefine11ac.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_regdefine11n.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_interface.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/phydm_reg.h \
     $(wildcard include/config/wlan/hal/8814ae.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/halrf/rtl8812a/halrf_8812a_ce.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/rtl8812a/halhwimg8812a_bb.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/rtl8812a/halhwimg8812a_mac.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/rtl8812a/halhwimg8812a_rf.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/rtl8812a/phydm_regconfig8812a.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/rtl8812a/phydm_rtl8812a.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8812a_hal.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/halrf/rtl8812a/halrf_8812a_ce.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/rtl8812a/halhwimg8812a_bb.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/rtl8812a/halhwimg8812a_mac.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/rtl8812a/halhwimg8812a_rf.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/rtl8812a/phydm_regconfig8812a.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/rtl8812a/phydm_rtl8812a.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8812a_hal.h \
     $(wildcard include/config/fw/c2h/debug.h) \
     $(wildcard include/config/file/fwimg.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/hal_data.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8812a_spec.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8821a_spec.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/hal_com_reg.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8812a_spec.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8812a_rf.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8812a_dm.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8812a_recv.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/hal_data.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8812a_spec.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8821a_spec.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/hal_com_reg.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8812a_spec.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8812a_rf.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8812a_dm.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8812a_recv.h \
     $(wildcard include/config/platform/novatek/nt72668.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8812a_xmit.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8821a_xmit.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8812a_cmd.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8812a_led.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/Hal8812PwrSeq.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/HalPwrSeqCmd.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/Hal8821APwrSeq.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/Hal8812PhyReg.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/Hal8812PhyCfg.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8812a_sreset.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/rtl8812a/version_rtl8812a.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/rtl8814a/halhwimg8814a_mac.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/rtl8814a/halhwimg8814a_rf.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/rtl8814a/halhwimg8814a_bb.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/rtl8814a/version_rtl8814a.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/rtl8814a/phydm_rtl8814a.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/halrf/rtl8814a/halrf_8814a_ce.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/halrf/rtl8814a/../halphyrf_ce.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/rtl8814a/phydm_regconfig8814a.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8814a_hal.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8814a_spec.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8814a_rf.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8814a_dm.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8814a_recv.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8812a_xmit.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8821a_xmit.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8812a_cmd.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8812a_led.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/Hal8812PwrSeq.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/HalPwrSeqCmd.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/Hal8821APwrSeq.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/Hal8812PhyReg.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/Hal8812PhyCfg.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8812a_sreset.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/rtl8812a/version_rtl8812a.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/rtl8814a/halhwimg8814a_mac.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/rtl8814a/halhwimg8814a_rf.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/rtl8814a/halhwimg8814a_bb.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/rtl8814a/version_rtl8814a.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/rtl8814a/phydm_rtl8814a.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/halrf/rtl8814a/halrf_8814a_ce.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/halrf/rtl8814a/../halphyrf_ce.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/rtl8814a/phydm_regconfig8814a.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8814a_hal.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8814a_spec.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8814a_rf.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8814a_dm.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8814a_recv.h \
     $(wildcard include/config/sdio/rx/copy.h) \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8814a_xmit.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8814a_cmd.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/hal_com_h2c.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8814a_led.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/Hal8814PwrSeq.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/Hal8814PhyReg.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/Hal8814PhyCfg.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/rtl8814a_sreset.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/halrf/rtl8814a/halrf_iqk_8814a.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/rtl8821a/halhwimg8821a_mac.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/rtl8821a/halhwimg8821a_rf.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/rtl8821a/halhwimg8821a_bb.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/rtl8821a/phydm_regconfig8821a.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/rtl8821a/phydm_rtl8821a.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/rtl8821a/version_rtl8821a.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/halrf/rtl8821a/halrf_8821a_ce.h \
-  /media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/include/../hal/phydm/halrf/rtl8821a/halrf_iqk_8821a_ce.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8814a_xmit.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8814a_cmd.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/hal_com_h2c.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8814a_led.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/Hal8814PwrSeq.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/Hal8814PhyReg.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/Hal8814PhyCfg.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/rtl8814a_sreset.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/halrf/rtl8814a/halrf_iqk_8814a.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/rtl8821a/halhwimg8821a_mac.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/rtl8821a/halhwimg8821a_rf.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/rtl8821a/halhwimg8821a_bb.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/rtl8821a/phydm_regconfig8821a.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/rtl8821a/phydm_rtl8821a.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/rtl8821a/version_rtl8821a.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/halrf/rtl8821a/halrf_8821a_ce.h \
+  /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/include/../hal/phydm/halrf/rtl8821a/halrf_iqk_8821a_ce.h \
 
-/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o: $(deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o)
+/media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/hal/hal_com_phycfg.o: $(deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/hal/hal_com_phycfg.o)
 
-$(deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-gentoo/hal/hal_com_phycfg.o):
+$(deps_/media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/hal/hal_com_phycfg.o):

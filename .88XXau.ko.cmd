@@ -1,0 +1,1 @@
+cmd_/media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/88XXau.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T ./scripts/module-common.lds  --build-id  -o /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/88XXau.ko /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/88XXau.o /media/Dati/Softwares/Gnu-Linux/rtl8812au-Linux/88XXau.mod.o ;  true
