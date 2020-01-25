@@ -57,12 +57,19 @@ For Raspberry (RPI 2/3) you will need kernel sources
 
       wget "https://raw.githubusercontent.com/notro/rpi-source/master/rpi-source" -O /usr/bin/rpi-source
       chmod 755 /usr/bin/rpi-source
+<<<<<<< HEAD
       rpi-source
 
 Then you need to download and compile the driver on the RPI
 
       git clone https://github.com/aircrack-ng/rtl8812au -b v5.2.20
       cd rtl*
+=======
+      rpi-source 
+      
+Then you need to compile the driver on the RPI
+
+>>>>>>> d109af92a9827471d79009811fc0a958c56ed05a
       make
       cp 8812au.ko /lib/modules/`uname -r`/kernel/drivers/net/wireless
       depmod -a
