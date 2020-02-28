@@ -5,24 +5,24 @@ __________________
 _____________________________________________________________________________________________
 
 ___      *Assuming you have already installed the build softwares, linux-headers or dkms;
-            Follow the steps:
+          Follow the steps:
 _____________________________________________________________________________________________
 
 ___      *Build
 
-
+```sh
  make
  sudo insmod 8812au.ko
-
+```
 
 After loading the module, a wireless network interface named __Realtek 802.11n WLAN Adapter__ should be available.
 
 ___      *Installing
 
-
+```sh
  sudo cp 8812au.ko /lib/modules/(uname -r)/kernel/drivers/net/wireless
  sudo depmod
-
+```
 
 The driver module should now be loaded automatically.
 
@@ -30,9 +30,9 @@ ___      *DKMS
 
 Automatically rebuilds and installs on kernel updates [Debian and derivates]
 
-
+```sh
  sudo apt-get install build-essential dkms
-
+```
 
 The driver source must be copied to /usr/src/8812au-4.2.2
 
@@ -45,16 +45,16 @@ Then add it to DKMS:
 ```
 
 Check with:
-
+```sh
  sudo dkms status
-
+```
 Automatically load at boot:
-
+```sh
  echo 8812au | sudo tee -a /etc/modules
-
+```
 Eventually remove from DKMS with:
-
+```sh
  sudo dkms remove -m 8812au -v 4.2.2 --all
-
+```
 _____________________________________________________________________________________________
 
