@@ -1,91 +1,88 @@
-#RTL8812AU-Linux
-__________________
+## Changes
+Updated to compile against kernel 5.5
 
-<img src="https://raw.githubusercontent.com/ilnanny/rtl8812au-Linux/master/screen.png" alt="RTL8812AU-Linux">
-_____________________________________________________________________________________________
+## Realtek 802.11ac (rtl8812au)
 
-___      *Assuming you have already installed the build softwares, linux-headers or dkms;
-            Follow the steps:
-_____________________________________________________________________________________________
+This is a fork of the Realtek 802.11ac (rtl8812au) v4.2.2 (7502.20130507)
+driver altered to build on Linux kernel version >= 3.10.
 
-___      *Build / Install with Make
+### Purpose
 
-For building & installing the driver with 'make' use
+My D-Link DWA-171 wireless dual-band USB adapter needs the Realtek 8812au
+driver to work under Linux.
 
-      make
-      sudo make install
+The current rtl8812au version (per nov. 20th 2013) doesn't compile on Linux
+kernels >= 3.10 due to a change in the proc entry API, specifically the
+deprecation of the `create_proc_entry()` and `create_proc_read_entry()`
+functions in favor of the new `proc_create()` function.
 
+### Building
 
+The Makefile is preconfigured to handle most x86/PC versions.  If you are compiling for something other than an intel x86 architecture, you need to first select the platform, e.g. for the Raspberry Pi, you need to set the I386 to n and the ARM_RPI to y:
+```sh
+...
+CONFIG_PLATFORM_I386_PC = n
+...
+CONFIG_PLATFORM_ARM_RPI = y
+```
 
-___      *DKMS
+There are many other platforms supported and some other advanced options, e.g. PCI instead of USB, but most won't be needed.
 
-This driver can be installed using [DKMS]. This is a system which will automatically recompile and install a kernel module when a new kernel gets installed or updated. To make use of DKMS, install the `dkms` package, which
-on Debian (based) systems is done like this:
+The driver is built by running `make`, and can be tested by loading the
+built module using `insmod`:
 
-      sudo apt install dkms
+```sh
+$ make
+$ sudo insmod 8812au.ko
+```
 
-on Void linux systems is done like this:
+After loading the module, a wireless network interface named __Realtek 802.11n WLAN Adapter__ should be available.
 
-      sudo xbps-install dkms
+### Installing
 
+Installing the driver is simply a matter of copying the built module
+into the correct location and updating module dependencies using `depmod`:
 
-___      *Installation of Driver
+```sh
+$ sudo cp 8812au.ko /lib/modules/$(uname -r)/kernel/drivers/net/wireless
+$ sudo depmod
+```
 
-In order to install the driver open a terminal in the directory with the source code and execute the following command:
+The driver module should now be loaded automatically.
 
-      sudo ./dkms-install.sh
+### DKMS
 
+Automatically rebuilds and installs on kernel updates. DKMS is in official sources of Ubuntu, for installation do:
 
-___      *Removal of Driver
+```sh
+$ sudo apt-get install build-essential dkms
+```
 
-In order to remove the driver from your system open a terminal in the directory with the source code and execute the following command:
+The driver source must be copied to /usr/src/8812au-4.2.2
 
-      sudo ./dkms-remove.sh
+Then add it to DKMS:
 
+```sh
+$ sudo dkms add -m 8812au -v 4.2.2
+$ sudo dkms build -m 8812au -v 4.2.2
+$ sudo dkms install -m 8812au -v 4.2.2
+```
 
+Check with:
+```sh
+$ sudo dkms status
+```
+Automatically load at boot:
+```sh
+$ echo 8812au | sudo tee -a /etc/modules
+```
+Eventually remove from DKMS with:
+```sh
+$ sudo dkms remove -m 8812au -v 4.2.2 --all
+```
 
+### References
 
-Package / Build dependencies (Devuan/Debian and derivates)
-
-      apt install build-essential
-      apt install bc
-      apt install libelf-dev
-      apt install linux-headers-`uname -r`
-
-
-For Raspberry (RPI 2/3) you will need kernel sources
-
-      wget "https://raw.githubusercontent.com/notro/rpi-source/master/rpi-source" -O /usr/bin/rpi-source
-      chmod 755 /usr/bin/rpi-source
-<<<<<<< HEAD
-      rpi-source
-
-Then you need to download and compile the driver on the RPI
-
-      git clone https://github.com/aircrack-ng/rtl8812au -b v5.2.20
-      cd rtl*
-=======
-      rpi-source 
-      
-Then you need to compile the driver on the RPI
-
->>>>>>> d109af92a9827471d79009811fc0a958c56ed05a
-      make
-      cp 8812au.ko /lib/modules/`uname -r`/kernel/drivers/net/wireless
-      depmod -a
-      modprobe 88XXau
-
-then run this step to change platform in Makefile, For RPI 2/3:
-
-      sed -i 's/CONFIG_PLATFORM_I386_PC = y/CONFIG_PLATFORM_I386_PC = n/g' Makefile
-      sed -i 's/CONFIG_PLATFORM_ARM_RPI = n/CONFIG_PLATFORM_ARM_RPI = y/g' Makefile
-
-But for RPI 3 B+ you will need to run those below
-which builds the ARM64 arch driver:
-
-      sed -i 's/CONFIG_PLATFORM_I386_PC = y/CONFIG_PLATFORM_I386_PC = n/g' Makefile
-      sed -i 's/CONFIG_PLATFORM_ARM64_RPI = n/CONFIG_PLATFORM_ARM64_RPI = y/g' Makefile
-
-
-
-___      *Finish
+- D-Link DWA-171
+  - [D-Link page](http://www.dlink.com/no/nb/home-solutions/connect/adapters/dwa-171-wireless-ac-dual-band-usb-adapter)
+  - [wikidevi page](http://wikidevi.com/wiki/D-Link_DWA-171_rev_A1)

@@ -1,7 +1,7 @@
 /******************************************************************************
  *
- * Copyright(c) 2007 - 2017 Realtek Corporation.
- *
+ * Copyright(c) 2007 - 2013 Realtek Corporation. All rights reserved.
+ *                                        
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of version 2 of the GNU General Public License as
  * published by the Free Software Foundation.
@@ -11,7 +11,12 @@
  * FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
  * more details.
  *
- *****************************************************************************/
+ * You should have received a copy of the GNU General Public License along with
+ * this program; if not, write to the Free Software Foundation, Inc.,
+ * 51 Franklin Street, Fifth Floor, Boston, MA 02110, USA
+ *
+ *
+ ******************************************************************************/
 #ifndef __OSDEP_BSD_SERVICE_H_
 #define __OSDEP_BSD_SERVICE_H_
 
@@ -86,7 +91,8 @@
 		_lock	lock;
 	};
 
-	typedef	struct mbuf _pkt;
+	//typedef	struct sk_buff	_pkt;
+	typedef	struct mbuf	_pkt;
 	typedef struct mbuf	_buffer;
 	
 	typedef struct	__queue	_queue;
@@ -100,6 +106,10 @@
 //	typedef struct thread		_thread_hdl_;
 	typedef void		thread_return;
 	typedef void*	thread_context;
+
+	//#define thread_exit() complete_and_exit(NULL, 0)
+
+	#define thread_exit() do{printf("%s", "RTKTHREAD_exit");}while(0)
 
 	typedef void timer_hdl_return;
 	typedef void* timer_hdl_context;
@@ -129,11 +139,16 @@
  *
  */
 struct timer_list {
-	struct callout callout;
-	void (*function)(void *);
-	void *arg;
-};
 
+        /* FreeBSD callout related fields */
+        struct callout callout;
+
+ 	//timeout function
+        void (*function)(void*);
+	//argument
+	 void *arg;
+        
+};
 struct workqueue_struct;
 struct work_struct;
 typedef void (*work_func_t)(struct work_struct *work);
@@ -534,10 +549,13 @@ struct urb *rtw_usb_alloc_urb(uint16_t iso_packets, uint16_t mem_flags);
 struct usb_host_endpoint *rtw_usb_find_host_endpoint(struct usb_device *dev, uint8_t type, uint8_t ep);
 struct usb_host_interface *rtw_usb_altnum_to_altsetting(const struct usb_interface *intf, uint8_t alt_index);
 struct usb_interface *rtw_usb_ifnum_to_if(struct usb_device *dev, uint8_t iface_no);
+void *rtw_usb_buffer_alloc(struct usb_device *dev, usb_size_t size, uint8_t *dma_addr);
 void *rtw_usbd_get_intfdata(struct usb_interface *intf);
 void rtw_usb_linux_register(void *arg);
 void rtw_usb_linux_deregister(void *arg);
 void rtw_usb_linux_free_device(struct usb_device *dev);
+void rtw_usb_buffer_free(struct usb_device *dev, usb_size_t size,
+    void *addr, uint8_t dma_addr);
 void rtw_usb_free_urb(struct urb *urb);
 void rtw_usb_init_urb(struct urb *urb);
 void rtw_usb_kill_urb(struct urb *urb);
@@ -659,31 +677,7 @@ __inline static void rtw_list_delete(_list *plist)
 	INIT_LIST_HEAD(plist);
 }
 
-static inline void timer_hdl(void *ctx)
-{
-	_timer *timer = (_timer *)ctx;
-
-	rtw_mtx_lock(NULL);
-	if (callout_pending(&timer->callout)) {
-		/* callout was reset */
-		rtw_mtx_unlock(NULL);
-		return;
-	}
-
-	if (!callout_active(&timer->callout)) {
-		/* callout was stopped */
-		rtw_mtx_unlock(NULL);
-		return;
-	}
-
-	callout_deactivate(&timer->callout);
-
-	timer->function(timer->arg);
-
-	rtw_mtx_unlock(NULL);
-}
-
-static inline void _init_timer(_timer *ptimer, _nic_hdl padapter, void *pfunc, void *cntx)
+__inline static void _init_timer(_timer *ptimer,_nic_hdl padapter,void *pfunc,void* cntx)
 {
 	ptimer->function = pfunc;
 	ptimer->arg = cntx;
@@ -692,19 +686,21 @@ static inline void _init_timer(_timer *ptimer, _nic_hdl padapter, void *pfunc, v
 
 __inline static void _set_timer(_timer *ptimer,u32 delay_time)
 {	
-	if (ptimer->function && ptimer->arg) {
+	//	mod_timer(ptimer , (jiffies+(delay_time*HZ/1000)));
+	if(ptimer->function && ptimer->arg){
 		rtw_mtx_lock(NULL);
-		callout_reset(&ptimer->callout, delay_time, timer_hdl, ptimer);
+		callout_reset(&ptimer->callout, delay_time,ptimer->function, ptimer->arg);
 		rtw_mtx_unlock(NULL);
 	}
 }
 
 __inline static void _cancel_timer(_timer *ptimer,u8 *bcancelled)
 {
+	//	del_timer_sync(ptimer); 	
+	//	*bcancelled=  _TRUE;//TRUE ==1; FALSE==0	
 	rtw_mtx_lock(NULL);
 	callout_drain(&ptimer->callout);
 	rtw_mtx_unlock(NULL);
-	*bcancelled = 1; /* assume an pending timer to be canceled */
 }
 
 __inline static void _init_workitem(_workitem *pwork, void *pfunc, PVOID cntx)

@@ -1,3 +1,4 @@
-make
-sudo make install
-modprobe 88XXau
+ sudo cp 8812au.ko /lib/modules/(uname -r)/kernel/drivers/net/wireless
+ sudo depmod
+ make
+ sudo insmod 8812au.ko
